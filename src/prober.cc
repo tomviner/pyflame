@@ -79,6 +79,9 @@ static const int build_abis[] = {
 #ifdef ENABLE_PY36
     36,
 #endif
+#ifdef ENABLE_PY37
+    37,
+#endif
 };
 
 static_assert(sizeof(build_abis) > 0, "No Python ABIs detected!");
@@ -220,6 +223,9 @@ int Prober::ParseOpts(int argc, char **argv) {
             break;
           case 36:
             abi_ = PyABI::Py36;
+            break;
+          case 37:
+            abi_ = PyABI::Py37;
             break;
           default:
             std::cerr << "Unknown or unsupported ABI version: " << abi_version

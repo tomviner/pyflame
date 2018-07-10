@@ -54,6 +54,7 @@ enum class PyABI {
   Py26 = 26,    // ABI for Python 2.6/2.7
   Py34 = 34,    // ABI for Python 3.4/3.5
   Py36 = 36     // ABI for Python 3.6
+  Py37 = 37     // ABI for Python 3.7.
 };
 
 // Symbols

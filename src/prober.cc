@@ -219,6 +219,7 @@ int Prober::ParseOpts(int argc, char **argv) {
             abi_ = PyABI::Py34;
             break;
           case 36:
+          case 37:
             abi_ = PyABI::Py36;
             break;
           default:
